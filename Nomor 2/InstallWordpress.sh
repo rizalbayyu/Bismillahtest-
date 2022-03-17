@@ -13,13 +13,14 @@ echo "==========================================================================
 echo "===============================Preparing=================================="
 echo "=========================================================================="
 
-add-apt-repository ppa:ondrej/php
+add-apt-repository -y ppa:ondrej/php
 apt -y update
-apt -y install expect unzip vim nginx apt install dnsmasq dnsutils ldnsutils
+apt -y install expect unzip vim nginx dnsmasq dnsutils ldnsutils
 
-# Allow access to port 80 & 53
+# Allow access to port 80 & 443
 sudo ufw allow 80
 sudo ufw allow 53
+sudo ufw allow 443
 systemctl start nginx
 systemctl enable nginx
 
