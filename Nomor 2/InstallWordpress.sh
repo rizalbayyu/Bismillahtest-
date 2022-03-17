@@ -17,9 +17,9 @@ add-apt-repository ppa:ondrej/php
 apt -y update
 apt -y install expect unzip vim nginx apt install dnsmasq dnsutils ldnsutils
 
-# Allow access to port 80 & 443
+# Allow access to port 80 & 53
 sudo ufw allow 80
-sudo ufw allow 443
+sudo ufw allow 53
 systemctl start nginx
 systemctl enable nginx
 
