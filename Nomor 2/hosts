@@ -2,7 +2,7 @@
 127.0.1.1 serverubuntu
 
 #Sesuaikan dengan IP anda
-192.168.0.100 DomainDemo.org
+192.168.0.132 DomainDemo.org
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
